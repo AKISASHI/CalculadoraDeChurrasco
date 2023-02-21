@@ -1,13 +1,12 @@
-*{
-
-}
-
-body{
+body {
     background-image: url(../imagens/Churrasco\ Background.jpg);
     background-repeat: no-repeat;
-    background-size: cover
-
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%; /* Adicionei altura 100% para preencher toda a tela */
+    margin: 0; /* Removi as margens */
 }
+
 .container{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 300px;
@@ -19,16 +18,18 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    
-    
+    background-position: center;
 }
 
-input{
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+input {
     width: 100%;
     display: block;
     padding: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
-
 }
-
